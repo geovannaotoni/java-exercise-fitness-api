@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Exercício #1",
+    "repetitions": 11,
+    "secretTechnique": "Técnica secreta #1"
+  },
+  {
+    "id": 2,
+    "name": "Exercício #2",
+    "repetitions": 12,
+    "secretTechnique": "Técnica secreta #2"
+  },
+  {
+    "id": 3,
+    "name": "Exercício #3",
+    "repetitions": 13,
+    "secretTechnique": "Técnica secreta #3"
+  },
+  {
+    "id": 4,
+    "name": "Exercício #4",
+    "repetitions": 14,
+    "secretTechnique": "Técnica secreta #4"
+  },
+  {
+    "id": 5,
+    "name": "Exercício #5",
+    "repetitions": 15,
+    "secretTechnique": "Técnica secreta #5"
+  },
+  {
+    "id": 6,
+    "name": "Exercício #6",
+    "repetitions": 16,
+    "secretTechnique": "Técnica secreta #6"
+  }
+]

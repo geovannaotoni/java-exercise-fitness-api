@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Agachamento",
+    "repetitions": 5,
+    "secretTechnique": "Boa postura"
+  },
+  {
+    "id": 2,
+    "name": "Polichinelo",
+    "repetitions": 20,
+    "secretTechnique": "Movimentos sincronizados"
+  },
+  {
+    "id": 3,
+    "name": "Abdominal",
+    "repetitions": 10,
+    "secretTechnique": "Cuidado com o pescoço"
+  }
+]
