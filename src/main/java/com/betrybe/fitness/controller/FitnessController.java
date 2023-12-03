@@ -1,9 +1,13 @@
 package com.betrybe.fitness.controller;
 
+import com.betrybe.fitness.dto.WorkoutDto;
 import com.betrybe.fitness.service.FitnessService;
 import com.betrybe.fitness.service.FitnessServiceInterface;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,5 +27,24 @@ public class FitnessController implements FitnessControllerInterface {
   @GetMapping
   public String getRoot() {
     return "Boas vindas à API de Fitness!";
+  }
+
+  /**
+   * Gets workout.
+   *
+   * @param id the id
+   * @return the workout
+   */
+  @GetMapping("/workouts/{id}")
+  public ResponseEntity<WorkoutDto> getWorkout(@PathVariable Long id) {
+    Optional<WorkoutDto> workoutDto = service.getWorkout(id);
+
+    // Se estiver vazio, retorna status 404 (não encontrado)
+    if (workoutDto.isEmpty()) {
+      return ResponseEntity.notFound().build();
+    }
+
+    // retorna status 200 (ok) com o DTO no corpo da resposta
+    return ResponseEntity.ok(workoutDto.get());
   }
 }
