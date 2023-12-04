@@ -20,7 +20,7 @@ Para instalar as dependências do projeto, execute o comando `mvn install`. Isso
 ### (7) Rota GET /fitness/workouts
  
 ## 💻 Visualize este projeto:
-<img src="">
+<img src="./images/fitnessapi.png">
 
 ## 🧹 Linter (Checkstyle)
 O Checkstyle é usado para fazer a análise estática do código. Este projeto já vem com as dependências relacionadas ao linter configuradas no arquivo `pom.xml`. Caso deseje rodar o Checkstyle manualmente, basta executar o comando `mvn checkstyle:check`.
